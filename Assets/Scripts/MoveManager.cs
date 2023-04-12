@@ -27,11 +27,11 @@ public class MoveManager : MonoBehaviour
         {
             moveTimer -= Time.deltaTime;
         } 
-        else if(moveTimer == 0) {
+        else if(moveTimer <= 0) {
 
             var i = Random.Range(0, moveTargets.Length);
-            //Player.transform.position = moveTargets[i].position;
-           // Player.transform.rotation = moveTargets[i].rotation;
+            Player.transform.position = moveTargets[i].transform.position;
+            Player.transform.rotation = moveTargets[i].transform.rotation;
             reset_moveTimer();
         }
     }
