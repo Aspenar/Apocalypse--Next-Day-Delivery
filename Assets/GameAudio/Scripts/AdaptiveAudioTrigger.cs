@@ -37,7 +37,7 @@ public class AdaptiveAudioTrigger : MonoBehaviour {
         return Color.black;
     }
 
-    void OnCollisionEnter(Collision collisionInfo)
+    void OnTriggerEnter(Collider Collider)
     {        
         AdaptiveAudioManager.Instance.AdjustAudioLevel(triggerLevel);
     }
