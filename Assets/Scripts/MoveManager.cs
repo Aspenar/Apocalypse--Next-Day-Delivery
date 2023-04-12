@@ -30,8 +30,8 @@ public class MoveManager : MonoBehaviour
         else if(moveTimer == 0) {
 
             var i = Random.Range(0, moveTargets.Length);
-            Player.transform.position = moveTargets[i].position;
-            Player.transform.rotation = moveTargets[i].rotation;
+            //Player.transform.position = moveTargets[i].position;
+           // Player.transform.rotation = moveTargets[i].rotation;
             reset_moveTimer();
         }
     }
