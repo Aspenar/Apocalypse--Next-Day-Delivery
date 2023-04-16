@@ -15,8 +15,9 @@ public class SpawnManager : MonoBehaviour
         {
             Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
             int boxIndex = Random.Range(0, boxPrefabs.Length);
-            Instantiate(boxPrefabs[boxIndex], spawnPos,
+            GameObject goInst = (GameObject) Instantiate (boxPrefabs[boxIndex], transform.position + spawnPos,
                 boxPrefabs[boxIndex].transform.rotation);
+            goInst.transform.parent = transform;
         }
     }
 }
