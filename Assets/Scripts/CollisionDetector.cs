@@ -32,6 +32,7 @@ public class CollisionDetector : MonoBehaviour
         }
         else if (other.tag == "GoodBox")
         {
+            GetComponent<AudioSource>().pitch = (Random.Range(0.95f, 1.05f));
             GetComponent<AudioSource>().PlayOneShot(GoodDoor, 0.7F);
             Destroy(other.gameObject);
             _score += 100;
