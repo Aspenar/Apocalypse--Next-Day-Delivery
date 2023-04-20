@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3372071061336046404}
   m_Layer: 0
   m_Name: GoodBox
-  m_TagString: Untagged
+  m_TagString: GoodBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,6 +114,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: ddb752e1360fa47439713d356f279ded,
+        type: 3}
+      propertyPath: m_TagString
+      value: GoodBox
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: ddb752e1360fa47439713d356f279ded,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: ddb752e1360fa47439713d356f279ded,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: ddb752e1360fa47439713d356f279ded,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: -5477749408508380018, guid: ddb752e1360fa47439713d356f279ded,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -183,6 +203,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!65 &3119184716743361555
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271478774523916684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0000005, y: 2.0000005, z: 2}
+  m_Center: {x: -0.0000000057990803, y: 0, z: 0}
 --- !u!114 &761869917569792200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,19 +331,6 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!65 &3119184716743361555
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 271478774523916684}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0000005, y: 2.0000005, z: 2}
-  m_Center: {x: -0.0000000057990803, y: 0, z: 0}
 --- !u!4 &1135653059048842243 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ddb752e1360fa47439713d356f279ded,

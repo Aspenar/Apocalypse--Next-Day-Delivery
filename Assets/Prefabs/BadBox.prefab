@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8164954756358669257}
   m_Layer: 0
   m_Name: BadBox
-  m_TagString: Untagged
+  m_TagString: BadBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7737694244662868573}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -114,6 +114,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 9fbef34d3ceb0604594bc326e3b9cc5b,
+        type: 3}
+      propertyPath: m_TagString
+      value: BadBox
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 9fbef34d3ceb0604594bc326e3b9cc5b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 9fbef34d3ceb0604594bc326e3b9cc5b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 9fbef34d3ceb0604594bc326e3b9cc5b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 9fbef34d3ceb0604594bc326e3b9cc5b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 9fbef34d3ceb0604594bc326e3b9cc5b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 9fbef34d3ceb0604594bc326e3b9cc5b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 65702495048144492, guid: 9fbef34d3ceb0604594bc326e3b9cc5b,
         type: 3}
       propertyPath: m_IsActive
@@ -122,6 +157,11 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9fbef34d3ceb0604594bc326e3b9cc5b,
         type: 3}
       propertyPath: m_Name
+      value: BadBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9fbef34d3ceb0604594bc326e3b9cc5b,
+        type: 3}
+      propertyPath: m_TagString
       value: BadBox
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -147,7 +187,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
+--- !u!65 &7243527001340334336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5128852895649457233}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0000005, y: 1.9999998, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4307363446272001680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,19 +316,6 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!65 &7243527001340334336
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5128852895649457233}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0000005, y: 1.9999998, z: 2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &5416566435685347806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9fbef34d3ceb0604594bc326e3b9cc5b,
