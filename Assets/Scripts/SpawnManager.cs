@@ -13,7 +13,7 @@ public class SpawnManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
-            Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+            Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 1, spawnPosZ);
             int boxIndex = Random.Range(0, boxPrefabs.Length);
             GameObject goInst = (GameObject) Instantiate (boxPrefabs[boxIndex], transform.position + spawnPos,
                 boxPrefabs[boxIndex].transform.rotation);
