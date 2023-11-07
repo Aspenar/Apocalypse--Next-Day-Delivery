@@ -1,17 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(CharacterController))]
 public class SpawnManager : MonoBehaviour
 {
+    private CharacterController controller;
     public GameObject[] boxPrefabs;
     private float spawnRangeX = 1;
     private float spawnPosZ = 0.25f;
+    private bool spawned = false;
+
+    public void onSpawned(InputAction.CallbackContext context)
+    {
+        spawned = context.action.triggered;
+    }
 
     // Update is called once per frame
-    void Update()
+    void update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        if (spawned == true)
         {
             Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 1, spawnPosZ);
             int boxIndex = Random.Range(0, boxPrefabs.Length);

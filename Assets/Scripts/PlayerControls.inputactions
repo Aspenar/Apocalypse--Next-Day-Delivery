@@ -1,0 +1,51 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "BoxSpawn",
+            "id": "20e9f888-d179-4cb1-8f82-48d8e59a21fc",
+            "actions": [
+                {
+                    "name": "SpawnBox",
+                    "type": "Button",
+                    "id": "119f3db4-e00a-4fe7-befb-246a6a38ded9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "978c4fc6-782d-4134-a9ae-93e52c28193d",
+                    "path": "<OculusTouchController>{LeftHand}/primaryButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "OculusQuest2",
+                    "action": "SpawnBox",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "OculusQuest2",
+            "bindingGroup": "OculusQuest2",
+            "devices": [
+                {
+                    "devicePath": "<OculusTouchController>{LeftHand}",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<OculusTouchController>{RightHand}",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
