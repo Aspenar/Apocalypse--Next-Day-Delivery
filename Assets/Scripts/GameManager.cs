@@ -20,5 +20,13 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         scoreText.text = _score.ToString();
+        if (_score > 0)
+        {
+            messageText.text = "Keep it up!";
+        }
+        else if (_score < 0)
+        {
+            messageText.text = "Stop blowing people's houses up";
+        }
     }
 }
