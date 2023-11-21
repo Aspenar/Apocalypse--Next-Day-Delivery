@@ -26,6 +26,17 @@
                     "action": "SpawnBox",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6f801864-6cce-41c3-8b1f-5ebc1db0f553",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "SpawnBox",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
@@ -43,6 +54,17 @@
                 {
                     "devicePath": "<OculusTouchController>{RightHand}",
                     "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Keyboard",
+            "bindingGroup": "Keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": true,
                     "isOR": false
                 }
             ]

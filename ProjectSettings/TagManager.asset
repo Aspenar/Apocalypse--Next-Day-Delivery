@@ -9,6 +9,7 @@ TagManager:
   - GoodBox
   - BadBox
   - MoveTarget
+  - Trash
   layers:
   - Default
   - TransparentFX

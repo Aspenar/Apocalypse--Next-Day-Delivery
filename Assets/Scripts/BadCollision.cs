@@ -23,5 +23,9 @@ public class BadCollision : MonoBehaviour
             print("OH GOD!");
 
         }
+        else if (col.gameObject.tag == "Trash")
+        {
+            Destroy (gameObject, 1);
+        }
     }
 }

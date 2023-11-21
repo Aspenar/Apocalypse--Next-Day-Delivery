@@ -11,22 +11,33 @@ public class SpawnManager : MonoBehaviour
     private float spawnRangeX = 1;
     private float spawnPosZ = 0.25f;
     private bool spawned = false;
+    private float cooldown = 0.1f;
 
     public void onSpawned(InputAction.CallbackContext context)
     {
         spawned = context.action.triggered;
+        spawn();
     }
-
-    // Update is called once per frame
-    void update()
+    void reset_Cooldown()
     {
-        if (spawned == true)
+        cooldown += 0.1f;
+    }
+    // Update is called once per frame
+    void spawn()
+    {
+        if (cooldown > 0)
+        {
+            cooldown -= Time.deltaTime;
+        }
+        if (cooldown <= 0)
         {
             Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 1, spawnPosZ);
             int boxIndex = Random.Range(0, boxPrefabs.Length);
             GameObject goInst = (GameObject) Instantiate (boxPrefabs[boxIndex], transform.position + spawnPos,
                 boxPrefabs[boxIndex].transform.rotation);
             goInst.transform.parent = transform;
+            Debug.Log("spawned");
+            reset_Cooldown();
         }
     }
 }
